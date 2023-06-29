@@ -59,6 +59,7 @@ class Plant(models.Model):
         null=False,
         blank=False,
         choices=PLANTS,
+        verbose_name='Type',
     )
     name = models.CharField(
         max_length=MAX_PLANT_NAME_LEN,
